@@ -45,18 +45,18 @@ renderCart();
 // ===== MILA CONCIERGE =====
 (()=>{
  const PRODUCTS=[
-  {id:'pistachio',name:'Pistachio Croissant',price:8.5,cat:'pastry',img:'assets/menu-images/pistachio-croissant.webp',desc:'A flaky European-style croissant with pistachio richness.',tags:['pistachio','croissant','pastry','european','sweet']},
-  {id:'berry',name:'Triple Berry Cream Cheese Tart',price:7.5,cat:'pastry',img:'assets/menu-images/triple-berry-cream-cheese-tart.webp',desc:'Bright berries, cream cheese and crisp pastry.',tags:['berry','tart','pastry','sweet','fruit']},
-  {id:'lorraine',name:'Quiche Lorraine',price:10,cat:'savory',img:'assets/menu-images/quiche-lorraine.webp',desc:'The French classic: rich custard, bacon and flaky pastry.',tags:['quiche','lorraine','savory','french','breakfast','lunch']},
-  {id:'medquiche',name:'Mediterranean Quiche',price:10,cat:'savory',img:'assets/menu-images/quiche-lorraine.webp',desc:'A lighter savory quiche with Mediterranean character.',tags:['quiche','mediterranean','savory','vegetarian','lunch']},
-  {id:'brownie',name:'Cardamom & Pecan Fudge Brownie',price:6.5,cat:'sweet',img:'assets/menu-images/cardamom-pecan-fudge-brownie.webp',desc:'Deep chocolate with cardamom perfume and pecan crunch.',tags:['brownie','chocolate','cardamom','pecan','sweet']},
-  {id:'lemon',name:'Meyer Lemon Loaf',price:6.5,cat:'sweet',img:'assets/menu-images/meyer-lemon-loaf.webp',desc:'Bright citrus, tender crumb and a polished tea-cake feel.',tags:['lemon','loaf','cake','sweet','tea']},
-  {id:'latte',name:'Latte',price:7,cat:'coffee',img:'assets/menu-images/coffee-house.webp',desc:'Espresso and steamed milk, made to order.',tags:['latte','coffee','espresso','drink']},
-  {id:'cappuccino',name:'Cappuccino',price:6,cat:'coffee',img:'assets/menu-images/coffee-house.webp',desc:'Espresso with a classic cap of textured milk.',tags:['cappuccino','coffee','espresso','drink']},
-  {id:'coldbrew',name:'Cold Brew',price:6,cat:'coffee',img:'assets/menu-images/coffee-house.webp',desc:'Cold, smooth coffee for a Florida afternoon.',tags:['cold brew','coffee','iced','drink']},
-  {id:'earlgrey',name:'Earl Grey Tea Cake',price:48,cat:'cake',img:'assets/menu-images/earl-grey-tea-cake.webp',desc:'A signature celebration cake with Earl Grey and Parisian-style buttercream.',tags:['earl grey','cake','birthday','celebration','european','buttercream']},
-  {id:'wrap',name:'Italian + Mediterranean Wrap',price:13,cat:'savory',img:'assets/menu-images/italian-mediterranean-wrap.webp',desc:'A savory lunch option with Mediterranean influence.',tags:['wrap','italian','mediterranean','savory','lunch']},
-  {id:'goddess',name:'Tropical Green Goddess',price:9.5,cat:'smoothie',img:'assets/menu-images/tropical-green-goddess.webp',desc:'A bright tropical green smoothie.',tags:['smoothie','green','tropical','healthy','drink']}
+  {id:'pistachio',name:'Pistachio Croissant',price:8.5,cat:'pastry',img:'assets/menu-images/pistachio-croissant.svg',desc:'A flaky European-style croissant with pistachio richness.',tags:['pistachio','croissant','pastry','european','sweet']},
+  {id:'berry',name:'Triple Berry Cream Cheese Tart',price:7.5,cat:'pastry',img:'assets/menu-images/triple-berry-cream-cheese-tart.svg',desc:'Bright berries, cream cheese and crisp pastry.',tags:['berry','tart','pastry','sweet','fruit']},
+  {id:'lorraine',name:'Quiche Lorraine',price:10,cat:'savory',img:'assets/menu-images/quiche-lorraine.svg',desc:'The French classic: rich custard, bacon and flaky pastry.',tags:['quiche','lorraine','savory','french','breakfast','lunch']},
+  {id:'medquiche',name:'Mediterranean Quiche',price:10,cat:'savory',img:'assets/menu-images/quiche-lorraine.svg',desc:'A lighter savory quiche with Mediterranean character.',tags:['quiche','mediterranean','savory','vegetarian','lunch']},
+  {id:'brownie',name:'Cardamom & Pecan Fudge Brownie',price:6.5,cat:'sweet',img:'assets/menu-images/cardamom-pecan-fudge-brownie.svg',desc:'Deep chocolate with cardamom perfume and pecan crunch.',tags:['brownie','chocolate','cardamom','pecan','sweet']},
+  {id:'lemon',name:'Meyer Lemon Loaf',price:6.5,cat:'sweet',img:'assets/menu-images/meyer-lemon-loaf.svg',desc:'Bright citrus, tender crumb and a polished tea-cake feel.',tags:['lemon','loaf','cake','sweet','tea']},
+  {id:'latte',name:'Latte',price:7,cat:'coffee',img:'assets/menu-images/coffee-house.svg',desc:'Espresso and steamed milk, made to order.',tags:['latte','coffee','espresso','drink']},
+  {id:'cappuccino',name:'Cappuccino',price:6,cat:'coffee',img:'assets/menu-images/coffee-house.svg',desc:'Espresso with a classic cap of textured milk.',tags:['cappuccino','coffee','espresso','drink']},
+  {id:'coldbrew',name:'Cold Brew',price:6,cat:'coffee',img:'assets/menu-images/coffee-house.svg',desc:'Cold, smooth coffee for a Florida afternoon.',tags:['cold brew','coffee','iced','drink']},
+  {id:'earlgrey',name:'Earl Grey Tea Cake',price:48,cat:'cake',img:'assets/menu-images/earl-grey-tea-cake.svg',desc:'A signature celebration cake with Earl Grey and Parisian-style buttercream.',tags:['earl grey','cake','birthday','celebration','european','buttercream']},
+  {id:'wrap',name:'Italian + Mediterranean Wrap',price:13,cat:'savory',img:'assets/menu-images/italian-mediterranean-wrap.svg',desc:'A savory lunch option with Mediterranean influence.',tags:['wrap','italian','mediterranean','savory','lunch']},
+  {id:'goddess',name:'Tropical Green Goddess',price:9.5,cat:'smoothie',img:'assets/menu-images/tropical-green-goddess.svg',desc:'A bright tropical green smoothie.',tags:['smoothie','green','tropical','healthy','drink']}
  ];
  const PAIR={pistachio:'cappuccino',berry:'latte',lorraine:'cappuccino',brownie:'coldbrew',lemon:'latte',wrap:'coldbrew'};
  const byId=Object.fromEntries(PRODUCTS.map(p=>[p.id,p]));
